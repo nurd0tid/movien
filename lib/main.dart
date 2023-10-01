@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:movien/screens/home/home_screens.dart';
 import 'package:movien/screens/splash/splash_screens.dart';
 
 void main() {
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Poppins',
         primarySwatch: Colors.blue,
       ),
-      home: const SplashScreen(),
+      home: const HomeScreens(),
     );
   }
 }
