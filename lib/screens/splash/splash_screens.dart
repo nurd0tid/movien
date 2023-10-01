@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:movien/screens/home/home_screens.dart';
+import 'package:movien/main_screens.dart';
 import 'package:solar_icons/solar_icons.dart';
 
 class SplashScreen extends StatelessWidget {
@@ -52,7 +50,7 @@ class SplashScreen extends StatelessWidget {
                   ElevatedButton.icon(
                     onPressed: () {
                       Navigator.of(context).pushReplacement(
-                        MaterialPageRoute(builder: (context) => HomeScreens()),
+                        MaterialPageRoute(builder: (context) => MainScreens()),
                       );
                     },
                     icon: const Icon(

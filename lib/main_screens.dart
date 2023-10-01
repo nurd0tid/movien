@@ -49,26 +49,46 @@ class _MainScreensState extends State<MainScreens> {
                 elevation: 0,
                 items: const [
                   BottomNavigationBarItem(
-                    icon: Icon(
-                      SolarIconsOutline.homeAngle,
+                    icon: Padding(
+                      padding:
+                          EdgeInsets.symmetric(vertical: 8.0), // Sesuaikan dengan jumlah padding yang Anda inginkan
+                      child: Icon(
+                        SolarIconsOutline.homeAngle,
+                        size: 30,
+                      ),
                     ),
                     label: 'Home',
                   ),
                   BottomNavigationBarItem(
-                    icon: Icon(
-                      IconaMoon.discover,
+                    icon: Padding(
+                      padding:
+                          EdgeInsets.symmetric(vertical: 8.0), // Sesuaikan dengan jumlah padding yang Anda inginkan
+                      child: Icon(
+                        IconaMoon.discover,
+                        size: 30,
+                      ),
                     ),
                     label: 'Discover',
                   ),
                   BottomNavigationBarItem(
-                    icon: Icon(
-                      SolarIconsOutline.download,
+                    icon: Padding(
+                      padding:
+                          EdgeInsets.symmetric(vertical: 8.0), // Sesuaikan dengan jumlah padding yang Anda inginkan
+                      child: Icon(
+                        SolarIconsOutline.download,
+                        size: 30,
+                      ),
                     ),
                     label: 'Download',
                   ),
                   BottomNavigationBarItem(
-                    icon: Icon(
-                      SolarIconsOutline.user,
+                    icon: Padding(
+                      padding:
+                          EdgeInsets.symmetric(vertical: 8.0), // Sesuaikan dengan jumlah padding yang Anda inginkan
+                      child: Icon(
+                        SolarIconsOutline.user,
+                        size: 30,
+                      ),
                     ),
                     label: 'Profile',
                   ),
