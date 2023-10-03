@@ -64,11 +64,11 @@ class _MainScreensState extends State<MainScreens> {
                       padding:
                           EdgeInsets.symmetric(vertical: 8.0), // Sesuaikan dengan jumlah padding yang Anda inginkan
                       child: Icon(
-                        IconaMoon.discover,
+                        SolarIconsOutline.bookmark,
                         size: 30,
                       ),
                     ),
-                    label: 'Discover',
+                    label: 'Bookmark',
                   ),
                   BottomNavigationBarItem(
                     icon: Padding(

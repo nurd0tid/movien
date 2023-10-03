@@ -396,6 +396,11 @@ class _MoviesScreensState extends State<MoviesScreens> {
                       ],
                     ),
                     SizedBox(height: 16),
+                    Divider(
+                      color: Color(0xFF2F375E),
+                      thickness: 1.0, // Ketebalan garis
+                    ),
+                    SizedBox(height: 10),
                     Align(
                       alignment: Alignment.centerLeft,
                       child: Text(
@@ -420,7 +425,7 @@ class _MoviesScreensState extends State<MoviesScreens> {
                           physics: BouncingScrollPhysics(),
                           children: [
                             Container(
-                              margin: EdgeInsets.only(right: 12, left: 12),
+                              margin: EdgeInsets.only(right: 5, left: 5),
                               child: ClipRRect(
                                 child: Image.asset(
                                   "assets/data/best1.png",
@@ -431,7 +436,7 @@ class _MoviesScreensState extends State<MoviesScreens> {
                               ),
                             ),
                             Container(
-                              margin: EdgeInsets.only(right: 12, left: 12),
+                              margin: EdgeInsets.only(right: 5, left: 5),
                               child: ClipRRect(
                                 child: Image.asset(
                                   "assets/data/best2.png",
@@ -442,7 +447,7 @@ class _MoviesScreensState extends State<MoviesScreens> {
                               ),
                             ),
                             Container(
-                              margin: EdgeInsets.only(right: 12, left: 12),
+                              margin: EdgeInsets.only(right: 5, left: 5),
                               child: ClipRRect(
                                 child: Image.asset(
                                   "assets/data/best3.png",
@@ -453,7 +458,7 @@ class _MoviesScreensState extends State<MoviesScreens> {
                               ),
                             ),
                             Container(
-                              margin: EdgeInsets.only(right: 12, left: 12),
+                              margin: EdgeInsets.only(right: 5, left: 5),
                               child: ClipRRect(
                                 child: Image.asset(
                                   "assets/data/best4.png",
@@ -464,7 +469,7 @@ class _MoviesScreensState extends State<MoviesScreens> {
                               ),
                             ),
                             Container(
-                              margin: EdgeInsets.only(right: 12, left: 12),
+                              margin: EdgeInsets.only(right: 5, left: 5),
                               child: ClipRRect(
                                 child: Image.asset(
                                   "assets/data/best5.png",

@@ -4,6 +4,7 @@ import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 import 'package:movien/screens/category/category_screens.dart';
 import 'package:movien/screens/category/detail/datail_screens.dart';
 import 'package:movien/screens/search/search_screens.dart';
+import 'package:movien/screens/watching/watching_screens.dart';
 
 
 class HomeScreens extends StatefulWidget {
@@ -184,10 +185,17 @@ class _HomeScreensState extends State<HomeScreens> {
                           ),
                           textAlign: TextAlign.center,
                         ),
-                        Icon(
-                          EvaIcons.arrowIosForwardOutline,
-                          color: Color(0xFFA9ADC2).withOpacity(0.5),
-                        ),
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.of(context).pushReplacement(
+                              MaterialPageRoute(builder: (context) => WatchingScreens()),
+                            );
+                          },
+                          child: Icon(
+                            EvaIcons.arrowIosForwardOutline,
+                            color: Color(0xFFA9ADC2).withOpacity(0.5),
+                          ),
+                        ), 
                       ],
                     ),
                     // Continue Watching
