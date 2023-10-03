@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:eva_icons_flutter/eva_icons_flutter.dart';
+import 'package:movien/screens/category/category_screens.dart';
+import 'package:movien/screens/category/detail/datail_screens.dart';
 import 'package:movien/screens/search/search_screens.dart';
 
 
@@ -280,10 +282,17 @@ class _HomeScreensState extends State<HomeScreens> {
                           ),
                           textAlign: TextAlign.center,
                         ),
-                        Icon(
-                          EvaIcons.arrowIosForwardOutline,
-                          color: Color(0xFFA9ADC2).withOpacity(0.5),
-                        ),
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.of(context).pushReplacement(
+                              MaterialPageRoute(builder: (context) => CategoryScreens()),
+                            );
+                          },
+                          child: Icon(
+                            EvaIcons.arrowIosForwardOutline,
+                            color: Color(0xFFA9ADC2).withOpacity(0.5),
+                          ),
+                        ),    
                       ],
                     ),
                     SizedBox(height: 16),
@@ -300,7 +309,9 @@ class _HomeScreensState extends State<HomeScreens> {
                       itemBuilder: (BuildContext context, int index) {
                         return GestureDetector(
                           onTap: () {
-                            // Tambahkan tindakan ketika salah satu kategori di-tap
+                            Navigator.of(context).pushReplacement(
+                              MaterialPageRoute(builder: (context) => CategoryDetailScreens()),
+                            );
                           },
                           child: Container(
                             decoration: BoxDecoration(
@@ -350,7 +361,7 @@ class _HomeScreensState extends State<HomeScreens> {
                                             ),
                                           ],
                                         ),
-                                        maxLines: 2,
+                                        maxLines: 1,
                                         overflow: TextOverflow.ellipsis,
                                         textAlign: TextAlign.center,
                                       ),
