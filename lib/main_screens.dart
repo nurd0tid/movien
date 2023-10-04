@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:movien/screens/discover/discover_screens.dart';
+import 'package:movien/screens/bookmark/bookmark_screens.dart';
 import 'package:movien/screens/download/download_screens.dart';
 import 'package:movien/screens/home/home_screens.dart';
 import 'package:movien/screens/profille/profile_screens.dart';
@@ -14,7 +14,7 @@ class MainScreens extends StatefulWidget {
 }
 
 class _MainScreensState extends State<MainScreens> {
-  List screens = [HomeScreens(), DiscoverScreens(), DownloadScreens(), ProfileScreens()];
+  List screens = [HomeScreens(), BookmarkScreens(), DownloadScreens(), ProfileScreens()];
 
   int _selectedIndex = 0;
 

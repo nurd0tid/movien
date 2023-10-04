@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/container.dart';
-import 'package:flutter/src/widgets/framework.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:movien/main_screens.dart';
 import 'package:movien/screens/category/detail/datail_screens.dart';
-import 'package:movien/screens/home/home_screens.dart';
 import 'package:solar_icons/solar_icons.dart';
 
 class CategoryScreens extends StatefulWidget {
@@ -83,7 +81,7 @@ class _CategoryScreensState extends State<CategoryScreens> {
                     GestureDetector(
                       onTap: () {
                         Navigator.of(context).pushReplacement(
-                          MaterialPageRoute(builder: (context) => HomeScreens()),
+                          MaterialPageRoute(builder: (context) => MainScreens()),
                         );
                       },
                       child: Icon(

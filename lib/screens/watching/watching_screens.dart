@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:movien/screens/home/home_screens.dart';
+import 'package:movien/main_screens.dart';
 import 'package:solar_icons/solar_icons.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:iconamoon/iconamoon.dart';
@@ -29,7 +29,7 @@ class _WatchingScreensState extends State<WatchingScreens> {
                     GestureDetector(
                       onTap: () {
                         Navigator.of(context).pushReplacement(
-                          MaterialPageRoute(builder: (context) => HomeScreens()),
+                          MaterialPageRoute(builder: (context) => MainScreens()),
                         );
                       },
                       child: Icon(
