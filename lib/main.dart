@@ -5,6 +5,7 @@ import 'package:movien/screens/category/detail/datail_screens.dart';
 import 'package:movien/screens/dev/dev_screens.dart';
 import 'package:movien/screens/home/home_screens.dart';
 import 'package:movien/screens/movies_type/movies/movies_screens.dart';
+import 'package:movien/screens/movies_type/season/detail/detail_screens.dart';
 import 'package:movien/screens/movies_type/season/season_screens.dart';
 import 'package:movien/screens/splash/splash_screens.dart';
 
@@ -25,7 +26,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Poppins',
         primarySwatch: Colors.blue,
       ),
-      home:  SeasonScreens(),
+      home:  SeasonDetailScreens(),
     );
   }
 }

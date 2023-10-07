@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:movien/screens/category/detail/datail_screens.dart';
+import 'package:movien/screens/movies_type/season/detail/detail_screens.dart';
 import 'package:solar_icons/solar_icons.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:iconamoon/iconamoon.dart';
@@ -386,6 +387,7 @@ class _SeasonScreensState extends State<SeasonScreens> with SingleTickerProvider
                       ),
                       child: TabBar(
                         controller: _tabController,
+                        unselectedLabelColor: Color(0xFF2F375E),
                         indicator: UnderlineTabIndicator(
                           borderSide: BorderSide(
                             width: 2.0, // Thickness of the underline
@@ -399,7 +401,6 @@ class _SeasonScreensState extends State<SeasonScreens> with SingleTickerProvider
                               style: GoogleFonts.getFont(
                                 'Poppins',
                                 fontSize: 14,
-                                color: Colors.white,
                                 fontWeight: FontWeight.w600,
                               ),
                               maxLines: 1,
@@ -412,7 +413,6 @@ class _SeasonScreensState extends State<SeasonScreens> with SingleTickerProvider
                               style: GoogleFonts.getFont(
                                 'Poppins',
                                 fontSize: 14,
-                                color: Colors.white,
                                 fontWeight: FontWeight.w600,
                               ),
                               maxLines: 1,
@@ -425,7 +425,6 @@ class _SeasonScreensState extends State<SeasonScreens> with SingleTickerProvider
                               style: GoogleFonts.getFont(
                                 'Poppins',
                                 fontSize: 14,
-                                color: Colors.white,
                                 fontWeight: FontWeight.w600,
                               ),
                               maxLines: 1,
@@ -838,18 +837,25 @@ class _SeasonScreensState extends State<SeasonScreens> with SingleTickerProvider
                         ],
                       ),
                     ),
-                    Align(
-                      alignment: Alignment.center,
-                      child: Text(
-                        'See All Episode',
-                        style: GoogleFonts.getFont(
-                          'Poppins',
-                          fontSize: 12,
-                          color: Color(0xFFAAB0CA),
-                          fontWeight: FontWeight.w500,
+                    GestureDetector(
+                      onTap: () {
+                        Navigator.of(context).pushReplacement(
+                          MaterialPageRoute(builder: (context) => SeasonDetailScreens()),
+                        );
+                      },
+                      child: Align(
+                        alignment: Alignment.center,
+                        child: Text(
+                          'See All Episode',
+                          style: GoogleFonts.getFont(
+                            'Poppins',
+                            fontSize: 12,
+                            color: Color(0xFFAAB0CA),
+                            fontWeight: FontWeight.w500,
+                          ),
+                          maxLines: 1,
+                          overflow: TextOverflow.ellipsis,
                         ),
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
                       ),
                     ),
                     SizedBox(height: 16),
