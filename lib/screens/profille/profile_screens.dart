@@ -246,7 +246,7 @@ class ProfileScreens extends StatelessWidget {
                         ),
                       ],
                     ),
-                    SizedBox(height: 60),
+                    SizedBox(height: 120),
                     Column(
                       children: [
                         Row(

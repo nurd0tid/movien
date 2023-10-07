@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:movien/main_screens.dart';
 import 'package:movien/screens/category/category_screens.dart';
 import 'package:movien/screens/category/detail/datail_screens.dart';
+import 'package:movien/screens/dev/dev_screens.dart';
 import 'package:movien/screens/home/home_screens.dart';
 import 'package:movien/screens/movies_type/movies/movies_screens.dart';
+import 'package:movien/screens/movies_type/season/season_screens.dart';
 import 'package:movien/screens/splash/splash_screens.dart';
 
 void main() {
@@ -23,7 +25,7 @@ class MyApp extends StatelessWidget {
         fontFamily: 'Poppins',
         primarySwatch: Colors.blue,
       ),
-      home: const MainScreens(),
+      home:  SeasonScreens(),
     );
   }
 }
